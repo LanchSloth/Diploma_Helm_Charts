@@ -1,0 +1,10 @@
+apiVersion: v2
+name: sf-web-app
+
+description: A Helm chart for Skillfactory Django web site
+type: application
+
+
+
+version: 6.9.0
+appVersion: "6.0"

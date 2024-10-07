@@ -1,0 +1,26 @@
+
+
+# Default values for sf-web-app.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 1
+
+image:
+  repository: morsh92/skillfactory-web-pg
+  pullPolicy: Always
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: ""
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
+db_name: 'django'
+db_host: 'my-release-postgresql.default.svc.cluster.local'
+db_port: '"5432"'
+
+secret:
+   enabled: true
+   db_username: 'admin'
+   db_password: 'test123'
